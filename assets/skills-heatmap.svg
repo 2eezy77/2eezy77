@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="420" viewBox="0 0 920 420" role="img" aria-label="Skill heatmap and ranked stack">
+  <defs>
+    <linearGradient id="panel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1524"/>
+      <stop offset="100%" stop-color="#0f2133"/>
+    </linearGradient>
+    <linearGradient id="barLead" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="55%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+    <linearGradient id="barA" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="barB" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0e7490"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="barC" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#155e75"/>
+      <stop offset="100%" stop-color="#67e8f9"/>
+    </linearGradient>
+    <linearGradient id="barD" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#164e63"/>
+      <stop offset="100%" stop-color="#5eead4"/>
+    </linearGradient>
+    <filter id="glowLead" x="-30%" y="-80%" width="160%" height="260%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="920" height="420" rx="16" fill="url(#panel)" stroke="#1e3a4c" stroke-width="1.5"/>
+
+  <text x="32" y="42" fill="#e2e8f0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-weight="700">Stack heatmap</text>
+  <text x="32" y="68" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13">Relative depth across products, systems tooling, and realtime 3D work</text>
+
+  <g transform="translate(700,22)">
+    <rect width="188" height="36" rx="18" fill="#422006" stroke="#fbbf24" stroke-width="1.5" opacity="0.95"/>
+    <circle cx="22" cy="18" r="5" fill="#fbbf24">
+      <animate attributeName="opacity" values="0.45;1;0.45" dur="1.6s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="4;6;4" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="38" y="23" fill="#fde68a" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">Leading: Python</text>
+  </g>
+
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12">
+    <text x="32" y="118" fill="#fde68a" font-weight="600">Python</text>
+    <g transform="translate(140,100)">
+      <rect width="28" height="22" rx="4" fill="#78350f"/><rect x="32" width="28" height="22" rx="4" fill="#92400e"/>
+      <rect x="64" width="28" height="22" rx="4" fill="#b45309"/><rect x="96" width="28" height="22" rx="4" fill="#d97706"/>
+      <rect x="128" width="28" height="22" rx="4" fill="#f59e0b"/><rect x="160" width="28" height="22" rx="4" fill="#fbbf24"/>
+      <rect x="192" width="28" height="22" rx="4" fill="#fcd34d"/><rect x="224" width="28" height="22" rx="4" fill="#fde68a" filter="url(#glowLead)">
+        <animate attributeName="opacity" values="0.75;1;0.75" dur="1.8s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <text x="32" y="156" fill="#bae6fd">TypeScript / JS</text>
+    <g transform="translate(140,138)">
+      <rect width="28" height="22" rx="4" fill="#164e63"/><rect x="32" width="28" height="22" rx="4" fill="#155e75"/>
+      <rect x="64" width="28" height="22" rx="4" fill="#0e7490"/><rect x="96" width="28" height="22" rx="4" fill="#0891b2"/>
+      <rect x="128" width="28" height="22" rx="4" fill="#06b6d4"/><rect x="160" width="28" height="22" rx="4" fill="#22d3ee"/>
+      <rect x="192" width="28" height="22" rx="4" fill="#67e8f9"/><rect x="224" width="28" height="22" rx="4" fill="#0f2133" stroke="#1e3a4c"/>
+    </g>
+
+    <text x="32" y="194" fill="#bae6fd">React</text>
+    <g transform="translate(140,176)">
+      <rect width="28" height="22" rx="4" fill="#164e63"/><rect x="32" width="28" height="22" rx="4" fill="#155e75"/>
+      <rect x="64" width="28" height="22" rx="4" fill="#0e7490"/><rect x="96" width="28" height="22" rx="4" fill="#0891b2"/>
+      <rect x="128" width="28" height="22" rx="4" fill="#06b6d4"/><rect x="160" width="28" height="22" rx="4" fill="#22d3ee"/>
+      <rect x="192" width="28" height="22" rx="4" fill="#0f2133" stroke="#1e3a4c"/><rect x="224" width="28" height="22" rx="4" fill="#0f2133" stroke="#1e3a4c"/>
+    </g>
+
+    <text x="32" y="232" fill="#bae6fd">C / systems</text>
+    <g transform="translate(140,214)">
+      <rect width="28" height="22" rx="4" fill="#164e63"/><rect x="32" width="28" height="22" rx="4" fill="#155e75"/>
+      <rect x="64" width="28" height="22" rx="4" fill="#0e7490"/><rect x="96" width="28" height="22" rx="4" fill="#0891b2"/>
+      <rect x="128" width="28" height="22" rx="4" fill="#06b6d4"/><rect x="160" width="28" height="22" rx="4" fill="#0f2133" stroke="#1e3a4c"/>
+      <rect x="192" width="28" height="22" rx="4" fill="#0f2133" stroke="#1e3a4c"/><rect x="224" width="28" height="22" rx="4" fill="#0f2133" stroke="#1e3a4c"/>
+    </g>
+
+    <text x="32" y="270" fill="#bae6fd">Cesium / WebGL</text>
+    <g transform="translate(140,252)">
+      <rect width="28" height="22" rx="4" fill="#134e4a"/><rect x="32" width="28" height="22" rx="4" fill="#115e59"/>
+      <rect x="64" width="28" height="22" rx="4" fill="#0f766e"/><rect x="96" width="28" height="22" rx="4" fill="#0d9488"/>
+      <rect x="128" width="28" height="22" rx="4" fill="#14b8a6"/><rect x="160" width="28" height="22" rx="4" fill="#0f2133" stroke="#1e3a4c"/>
+      <rect x="192" width="28" height="22" rx="4" fill="#0f2133" stroke="#1e3a4c"/><rect x="224" width="28" height="22" rx="4" fill="#0f2133" stroke="#1e3a4c"/>
+    </g>
+
+    <text x="32" y="308" fill="#bae6fd">OpenUSD</text>
+    <g transform="translate(140,290)">
+      <rect width="28" height="22" rx="4" fill="#134e4a"/><rect x="32" width="28" height="22" rx="4" fill="#115e59"/>
+      <rect x="64" width="28" height="22" rx="4" fill="#0f766e"/><rect x="96" width="28" height="22" rx="4" fill="#0d9488"/>
+      <rect x="128" width="28" height="22" rx="4" fill="#14b8a6"/><rect x="160" width="28" height="22" rx="4" fill="#0f2133" stroke="#1e3a4c"/>
+      <rect x="192" width="28" height="22" rx="4" fill="#0f2133" stroke="#1e3a4c"/><rect x="224" width="28" height="22" rx="4" fill="#0f2133" stroke="#1e3a4c"/>
+    </g>
+
+    <text x="32" y="346" fill="#bae6fd">Systems tooling</text>
+    <g transform="translate(140,328)">
+      <rect width="28" height="22" rx="4" fill="#1e3a5f"/><rect x="32" width="28" height="22" rx="4" fill="#1e40af"/>
+      <rect x="64" width="28" height="22" rx="4" fill="#2563eb"/><rect x="96" width="28" height="22" rx="4" fill="#3b82f6"/>
+      <rect x="128" width="28" height="22" rx="4" fill="#60a5fa"/><rect x="160" width="28" height="22" rx="4" fill="#93c5fd"/>
+      <rect x="192" width="28" height="22" rx="4" fill="#0f2133" stroke="#1e3a4c"/><rect x="224" width="28" height="22" rx="4" fill="#0f2133" stroke="#1e3a4c"/>
+    </g>
+  </g>
+
+  <text x="460" y="118" fill="#e2e8f0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="600">Ranked depth</text>
+
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" fill="#cbd5e1">
+    <text x="460" y="148">Python</text>
+    <text x="860" y="148" text-anchor="end" fill="#fde68a" font-weight="700">96</text>
+    <rect x="460" y="154" width="400" height="12" rx="6" fill="#1e293b"/>
+    <rect x="460" y="154" width="384" height="12" rx="6" fill="url(#barLead)" filter="url(#glowLead)">
+      <animate attributeName="opacity" values="0.82;1;0.82" dur="1.8s" repeatCount="indefinite"/>
+    </rect>
+
+    <text x="460" y="192">TypeScript / JS</text>
+    <text x="860" y="192" text-anchor="end" fill="#67e8f9">88</text>
+    <rect x="460" y="198" width="400" height="12" rx="6" fill="#1e293b"/>
+    <rect x="460" y="198" width="352" height="12" rx="6" fill="url(#barA)"/>
+
+    <text x="460" y="236">React</text>
+    <text x="860" y="236" text-anchor="end" fill="#67e8f9">82</text>
+    <rect x="460" y="242" width="400" height="12" rx="6" fill="#1e293b"/>
+    <rect x="460" y="242" width="328" height="12" rx="6" fill="url(#barB)"/>
+
+    <text x="460" y="280">Systems tooling</text>
+    <text x="860" y="280" text-anchor="end" fill="#93c5fd">80</text>
+    <rect x="460" y="286" width="400" height="12" rx="6" fill="#1e293b"/>
+    <rect x="460" y="286" width="320" height="12" rx="6" fill="#3b82f6"/>
+
+    <text x="460" y="324">C / systems</text>
+    <text x="860" y="324" text-anchor="end" fill="#67e8f9">74</text>
+    <rect x="460" y="330" width="400" height="12" rx="6" fill="#1e293b"/>
+    <rect x="460" y="330" width="296" height="12" rx="6" fill="url(#barC)"/>
+
+    <text x="460" y="368">Cesium / OpenUSD</text>
+    <text x="860" y="368" text-anchor="end" fill="#5eead4">72</text>
+    <rect x="460" y="374" width="400" height="12" rx="6" fill="#1e293b"/>
+    <rect x="460" y="374" width="288" height="12" rx="6" fill="url(#barD)"/>
+  </g>
+
+  <g transform="translate(140,378)" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">
+    <text x="0" y="12">Less</text>
+    <rect x="36" y="2" width="14" height="12" rx="2" fill="#164e63"/>
+    <rect x="52" y="2" width="14" height="12" rx="2" fill="#0e7490"/>
+    <rect x="68" y="2" width="14" height="12" rx="2" fill="#06b6d4"/>
+    <rect x="84" y="2" width="14" height="12" rx="2" fill="#67e8f9"/>
+    <text x="106" y="12">More</text>
+    <rect x="150" y="2" width="14" height="12" rx="2" fill="#fbbf24"/>
+    <text x="170" y="12" fill="#fde68a">leading band</text>
+  </g>
+</svg>
