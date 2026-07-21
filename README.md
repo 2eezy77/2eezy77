@@ -35,7 +35,7 @@ Software engineer building full-stack products, live 3D / geospatial systems, an
     </td>
     <td width="50%" valign="top">
       <a href="https://github.com/2eezy77/openusd-live-control">
-        <img src="https://raw.githubusercontent.com/2eezy77/openusd-live-control/main/docs/viewport.jpg" alt="OpenUSD Live Control" width="100%" />
+        <img src="https://raw.githubusercontent.com/2eezy77/openusd-live-control/master/docs/viewport.jpg" alt="OpenUSD Live Control" width="100%" />
       </a>
       <h3><a href="https://github.com/2eezy77/openusd-live-control">openusd-live-control</a></h3>
       Real-time Maya / OpenUSD control — CLI → socket bridge → viewport.
