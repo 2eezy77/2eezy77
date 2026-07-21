@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="56" viewBox="0 0 1200 56" role="img" aria-label="Focus areas ticker">
+  <defs>
+    <linearGradient id="tbg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#071018"/>
+      <stop offset="50%" stop-color="#0c1f33"/>
+      <stop offset="100%" stop-color="#071018"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#fbbf24" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+      <animate attributeName="x1" values="-50%;50%;-50%" dur="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="50%;150%;50%" dur="3.5s" repeatCount="indefinite"/>
+    </linearGradient>
+    <filter id="tg" x="-10%" y="-80%" width="120%" height="260%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="56" rx="16" fill="url(#tbg)" stroke="#1e3a4c" stroke-width="1.5"/>
+  <rect width="1200" height="56" rx="16" fill="url(#shine)"/>
+
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" filter="url(#tg)">
+    <g>
+      <text y="34" fill="#67e8f9">Æ systems · sockets · Windows UIA · parallel compute · products · React · Node · Python · Postgres · realtime 3D · Cesium · OpenUSD · WebGL · geospatial · </text>
+      <text y="34" fill="#67e8f9">Æ systems · sockets · Windows UIA · parallel compute · products · React · Node · Python · Postgres · realtime 3D · Cesium · OpenUSD · WebGL · geospatial · </text>
+      <animateTransform attributeName="transform" type="translate" values="0,0;-980,0;0,0" dur="22s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <rect x="0" y="0" width="40" height="56" rx="16" fill="#071018"/>
+  <rect x="1160" y="0" width="40" height="56" rx="16" fill="#071018"/>
+  <circle cx="28" cy="28" r="5" fill="#fbbf24">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="1.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1172" cy="28" r="5" fill="#22d3ee">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="1.2s" begin="0.6s" repeatCount="indefinite"/>
+  </circle>
+</svg>

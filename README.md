@@ -11,20 +11,28 @@ Software engineer focused on software systems, full-stack products, and real-tim
 </p>
 
 <p align="center">
-  <img src="./assets/section-divider.svg" alt="" width="100%" />
-</p>
-
-## Skills
-
-<p align="center">
-  <img src="./assets/skills-heatmap.svg" alt="Stack heatmap - Python leading" width="100%" />
+  <img src="./assets/focus-ticker.svg" alt="systems · products · realtime 3D" width="100%" />
 </p>
 
 <p align="center">
   <img src="./assets/section-divider.svg" alt="" width="100%" />
 </p>
 
-## Featured builds
+<p align="center">
+  <img src="./assets/header-language.svg" alt="Language mix" height="40" />
+</p>
+
+<p align="center">
+  <img src="./assets/languages-heatmap.svg" alt="Language mix heatmap - Python leading" width="100%" />
+</p>
+
+<p align="center">
+  <img src="./assets/section-divider.svg" alt="" width="100%" />
+</p>
+
+<p align="center">
+  <img src="./assets/header-builds.svg" alt="Featured builds" height="40" />
+</p>
 
 <table>
   <tr>
@@ -33,7 +41,7 @@ Software engineer focused on software systems, full-stack products, and real-tim
         <img src="https://raw.githubusercontent.com/2eezy77/property-manager/main/docs/login.jpg" alt="Montero Rentals" width="100%" />
       </a>
       <p>
-        <img src="./assets/label-product.svg" alt="product" height="20" />
+        <img src="./assets/label-product.svg" alt="product" height="22" />
         <b><a href="https://github.com/2eezy77/property-manager">property-manager</a></b>
       </p>
       Full-stack rental product - tenant / manager / owner portals with Stripe ACH, Plaid, and Postgres.
@@ -43,7 +51,7 @@ Software engineer focused on software systems, full-stack products, and real-tim
         <img src="https://raw.githubusercontent.com/2eezy77/window-hints/main/docs/overlay-google.jpg" alt="window-hints" width="100%" />
       </a>
       <p>
-        <img src="./assets/label-systems.svg" alt="systems tooling" height="20" />
+        <img src="./assets/label-systems.svg" alt="systems tooling" height="22" />
         <b><a href="https://github.com/2eezy77/window-hints">window-hints</a></b>
       </p>
       Systems tooling for Windows - UI Automation scan, overlay codes, hotkey cursor jumps.
@@ -55,7 +63,7 @@ Software engineer focused on software systems, full-stack products, and real-tim
         <img src="https://raw.githubusercontent.com/2eezy77/openusd-live-control/master/docs/viewport.jpg" alt="OpenUSD Live Control" width="100%" />
       </a>
       <p>
-        <img src="./assets/label-3d.svg" alt="realtime 3D" height="20" />
+        <img src="./assets/label-3d.svg" alt="realtime 3D" height="22" />
         <b><a href="https://github.com/2eezy77/openusd-live-control">openusd-live-control</a></b>
       </p>
       Real-time 3D tooling - Maya / OpenUSD control via CLI to socket bridge to viewport.
@@ -65,7 +73,7 @@ Software engineer focused on software systems, full-stack products, and real-tim
         <img src="https://raw.githubusercontent.com/2eezy77/kiad-atc/main/docs/kiad-atc-ui.jpg" alt="Real-time aviation visualization" width="100%" />
       </a>
       <p>
-        <img src="./assets/label-geo.svg" alt="geospatial viz" height="20" />
+        <img src="./assets/label-geo.svg" alt="geospatial viz" height="22" />
         <b><a href="https://github.com/2eezy77/kiad-atc">kiad-atc</a></b>
       </p>
       Real-time geospatial viz - CesiumJS, Photorealistic 3D Tiles, live ADS-B pipeline, overlay UI.
@@ -79,7 +87,9 @@ Also: [omniverse-integration](https://github.com/2eezy77/omniverse-integration) 
   <img src="./assets/section-divider.svg" alt="" width="100%" />
 </p>
 
-## Focus
+<p align="center">
+  <img src="./assets/header-focus.svg" alt="Focus" height="40" />
+</p>
 
 - **Software systems** - sockets, Windows UIA, parallel programming (MPI / OpenMP / Pthreads)
 - **Products & tooling** - React, Node/Express, Flask, Postgres, Stripe, Plaid; shipping end-to-end

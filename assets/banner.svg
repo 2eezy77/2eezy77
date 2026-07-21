@@ -1,23 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-label="Software systems, products, realtime 3D">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-label="Software systems, products, realtime 3D">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a1220">
-        <animate attributeName="stop-color" values="#0a1220;#0d1a2e;#0a1220" dur="8s" repeatCount="indefinite"/>
+      <stop offset="0%" stop-color="#050a14">
+        <animate attributeName="stop-color" values="#050a14;#0a1628;#050a14" dur="7s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="45%" stop-color="#102538">
-        <animate attributeName="stop-color" values="#102538;#143048;#102538" dur="10s" repeatCount="indefinite"/>
+      <stop offset="40%" stop-color="#0c2038">
+        <animate attributeName="stop-color" values="#0c2038;#143454;#0c2038" dur="9s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="100%" stop-color="#0c1f2a">
-        <animate attributeName="stop-color" values="#0c1f2a;#0e2835;#0c1f2a" dur="9s" repeatCount="indefinite"/>
+      <stop offset="100%" stop-color="#071820">
+        <animate attributeName="stop-color" values="#071820;#0c2a35;#071820" dur="8s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
-    <radialGradient id="glowA" cx="22%" cy="35%" r="45%">
-      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.35"/>
+    <radialGradient id="glowA" cx="18%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.45">
+        <animate attributeName="stop-opacity" values="0.25;0.55;0.25" dur="5s" repeatCount="indefinite"/>
+      </stop>
       <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="glowB" cx="78%" cy="60%" r="40%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.28"/>
-      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    <radialGradient id="glowB" cx="72%" cy="55%" r="48%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.22">
+        <animate attributeName="stop-opacity" values="0.12;0.32;0.12" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#fbbf24" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowC" cx="88%" cy="25%" r="35%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.25">
+        <animate attributeName="stop-opacity" values="0.1;0.35;0.1" dur="7s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="cardFace" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#1e3a4c"/>
@@ -35,101 +45,188 @@
       <stop offset="0%" stop-color="#0891b2"/>
       <stop offset="100%" stop-color="#0e7490"/>
     </linearGradient>
+    <linearGradient id="cubeTopGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="cubeLeftGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+    <linearGradient id="cubeRightGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="strongGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
 
-  <rect width="1200" height="280" rx="18" fill="url(#bg)"/>
-  <rect width="1200" height="280" rx="18" fill="url(#glowA)"/>
-  <rect width="1200" height="280" rx="18" fill="url(#glowB)"/>
+  <rect width="1200" height="340" rx="20" fill="url(#bg)"/>
+  <rect width="1200" height="340" rx="20" fill="url(#glowA)"/>
+  <rect width="1200" height="340" rx="20" fill="url(#glowB)"/>
+  <rect width="1200" height="340" rx="20" fill="url(#glowC)"/>
 
-  <g opacity="0.14" stroke="#67e8f9" stroke-width="1">
-    <path d="M40 60 H1160 M40 100 H1160 M40 140 H1160 M40 180 H1160 M40 220 H1160"/>
-    <path d="M80 40 V240 M160 40 V240 M240 40 V240 M320 40 V240 M400 40 V240 M480 40 V240 M560 40 V240 M640 40 V240 M720 40 V240 M800 40 V240 M880 40 V240 M960 40 V240 M1040 40 V240 M1120 40 V240"/>
+  <!-- animated grid -->
+  <g opacity="0.16" stroke="#67e8f9" stroke-width="1">
+    <path d="M40 50 H1160 M40 90 H1160 M40 130 H1160 M40 170 H1160 M40 210 H1160 M40 250 H1160 M40 290 H1160">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <path d="M80 30 V310 M160 30 V310 M240 30 V310 M320 30 V310 M400 30 V310 M480 30 V310 M560 30 V310 M640 30 V310 M720 30 V310 M800 30 V310 M880 30 V310 M960 30 V310 M1040 30 V310 M1120 30 V310"/>
   </g>
 
+  <!-- scan line -->
+  <rect x="0" y="40" width="1200" height="3" fill="#22d3ee" opacity="0.35" filter="url(#softGlow)">
+    <animate attributeName="y" values="40;300;40" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.15;0.55;0.15" dur="6s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- particles -->
   <g fill="#22d3ee">
-    <circle cx="180" cy="70" r="3.5" opacity="0.7">
-      <animate attributeName="cy" values="70;58;70" dur="4.5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.45;0.9;0.45" dur="4.5s" repeatCount="indefinite"/>
+    <circle cx="160" cy="60" r="3.5" opacity="0.8" filter="url(#softGlow)">
+      <animate attributeName="cy" values="60;42;60" dur="3.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="3.8s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="980" cy="90" r="3" opacity="0.65">
-      <animate attributeName="cy" values="90;78;90" dur="5.2s" repeatCount="indefinite"/>
+    <circle cx="240" cy="220" r="2.8" opacity="0.65">
+      <animate attributeName="cy" values="220;200;220" dur="4.5s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="1080" cy="190" r="2.5" opacity="0.55">
-      <animate attributeName="cy" values="190;175;190" dur="3.8s" repeatCount="indefinite"/>
+    <circle cx="420" cy="80" r="2.2" fill="#fbbf24" opacity="0.7">
+      <animate attributeName="cy" values="80;65;80" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.35;0.95;0.35" dur="5s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="260" cy="210" r="2.8" opacity="0.5">
-      <animate attributeName="cy" values="210;198;210" dur="6s" repeatCount="indefinite"/>
+    <circle cx="980" cy="70" r="3.2" opacity="0.75" filter="url(#softGlow)">
+      <animate attributeName="cy" values="70;52;70" dur="4.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1080" cy="200" r="2.6" fill="#a78bfa" opacity="0.7">
+      <animate attributeName="cy" values="200;180;200" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="520" cy="260" r="2.4" fill="#5eead4" opacity="0.6">
+      <animate attributeName="cy" values="260;245;260" dur="5.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="760" cy="100" r="2" fill="#fde68a" opacity="0.65">
+      <animate attributeName="cx" values="760;780;760" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="300" cy="140" r="1.8" opacity="0.55">
+      <animate attributeName="r" values="1.5;3;1.5" dur="2.8s" repeatCount="indefinite"/>
     </circle>
   </g>
 
-  <g stroke="#22d3ee" stroke-width="1.2" opacity="0.25" fill="none">
-    <path d="M180 70 C320 40, 420 120, 520 95">
-      <animate attributeName="opacity" values="0.15;0.4;0.15" dur="5s" repeatCount="indefinite"/>
+  <!-- connection arcs -->
+  <g stroke="#22d3ee" stroke-width="1.4" fill="none" opacity="0.35" filter="url(#softGlow)">
+    <path d="M160 60 C280 30, 380 140, 520 90">
+      <animate attributeName="opacity" values="0.15;0.55;0.15" dur="4.5s" repeatCount="indefinite"/>
     </path>
-    <path d="M980 90 C900 140, 860 120, 820 160">
-      <animate attributeName="opacity" values="0.12;0.35;0.12" dur="6s" repeatCount="indefinite"/>
+    <path d="M980 70 C900 130, 840 110, 780 170" stroke="#fbbf24">
+      <animate attributeName="opacity" values="0.1;0.45;0.1" dur="5.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M1080 200 C1000 240, 920 180, 840 220" stroke="#a78bfa">
+      <animate attributeName="opacity" values="0.12;0.4;0.12" dur="6s" repeatCount="indefinite"/>
     </path>
   </g>
 
-  <g transform="translate(880,55)">
-    <g>
-      <polygon points="70,40 110,18 150,40 110,62" fill="url(#cubeTop)" opacity="0.95"/>
-      <polygon points="70,40 110,62 110,110 70,88" fill="url(#cubeLeft)"/>
-      <polygon points="110,62 150,40 150,88 110,110" fill="url(#cubeRight)"/>
-      <animateTransform attributeName="transform" type="translate" values="0,0;0,-8;0,0" dur="4.2s" repeatCount="indefinite"/>
+  <!-- floating isometric cluster -->
+  <g transform="translate(860,50)">
+    <g filter="url(#softGlow)">
+      <polygon points="90,50 140,22 190,50 140,78" fill="url(#cubeTop)" opacity="0.98"/>
+      <polygon points="90,50 140,78 140,138 90,110" fill="url(#cubeLeft)"/>
+      <polygon points="140,78 190,50 190,110 140,138" fill="url(#cubeRight)"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-14;0,0" dur="3.8s" repeatCount="indefinite"/>
+    </g>
+    <g opacity="0.95">
+      <polygon points="20,120 62,96 104,120 62,144" fill="url(#cubeTopGold)"/>
+      <polygon points="20,120 62,144 62,188 20,164" fill="url(#cubeLeftGold)"/>
+      <polygon points="62,144 104,120 104,164 62,188" fill="url(#cubeRightGold)"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-10;0,0" dur="4.6s" begin="0.5s" repeatCount="indefinite"/>
     </g>
     <g opacity="0.9">
-      <polygon points="20,95 52,78 84,95 52,112" fill="url(#cubeTop)"/>
-      <polygon points="20,95 52,112 52,148 20,131" fill="url(#cubeLeft)"/>
-      <polygon points="52,112 84,95 84,131 52,148" fill="url(#cubeRight)"/>
-      <animateTransform attributeName="transform" type="translate" values="0,0;0,-6;0,0" dur="5s" begin="0.6s" repeatCount="indefinite"/>
+      <polygon points="160,130 198,108 236,130 198,152" fill="url(#cubeTop)"/>
+      <polygon points="160,130 198,152 198,190 160,168" fill="url(#cubeLeft)"/>
+      <polygon points="198,152 236,130 236,168 198,190" fill="url(#cubeRight)"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-16;0,0" dur="4.2s" begin="1s" repeatCount="indefinite"/>
     </g>
     <g opacity="0.85">
-      <polygon points="130,105 158,90 186,105 158,120" fill="url(#cubeTop)"/>
-      <polygon points="130,105 158,120 158,150 130,135" fill="url(#cubeLeft)"/>
-      <polygon points="158,120 186,105 186,135 158,150" fill="url(#cubeRight)"/>
-      <animateTransform attributeName="transform" type="translate" values="0,0;0,-10;0,0" dur="4.8s" begin="1.1s" repeatCount="indefinite"/>
+      <polygon points="70,190 100,172 130,190 100,208" fill="url(#cubeTop)"/>
+      <polygon points="70,190 100,208 100,238 70,220" fill="url(#cubeLeft)"/>
+      <polygon points="100,208 130,190 130,220 100,238" fill="url(#cubeRight)"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-8;0,0" dur="5s" begin="0.3s" repeatCount="indefinite"/>
     </g>
+    <!-- orbit ring -->
+    <ellipse cx="120" cy="130" rx="110" ry="42" fill="none" stroke="#67e8f9" stroke-width="1.2" opacity="0.35" stroke-dasharray="6 8">
+      <animateTransform attributeName="transform" type="rotate" from="0 120 130" to="360 120 130" dur="18s" repeatCount="indefinite"/>
+    </ellipse>
+    <circle cx="230" cy="130" r="5" fill="#fbbf24" filter="url(#strongGlow)">
+      <animateTransform attributeName="transform" type="rotate" from="0 120 130" to="360 120 130" dur="18s" repeatCount="indefinite"/>
+    </circle>
   </g>
 
-  <g transform="translate(620,48)">
-    <g>
-      <rect x="0" y="20" width="150" height="90" rx="12" fill="url(#cardFace)" stroke="#22d3ee" stroke-opacity="0.35" stroke-width="1.5"/>
-      <rect x="16" y="38" width="70" height="8" rx="4" fill="#22d3ee" opacity="0.55"/>
-      <rect x="16" y="56" width="110" height="6" rx="3" fill="#94a3b8" opacity="0.35"/>
-      <rect x="16" y="70" width="90" height="6" rx="3" fill="#94a3b8" opacity="0.25"/>
-      <circle cx="128" cy="42" r="6" fill="#38bdf8" opacity="0.7">
-        <animate attributeName="opacity" values="0.4;1;0.4" dur="2.4s" repeatCount="indefinite"/>
+  <!-- floating product cards -->
+  <g transform="translate(600,55)">
+    <g filter="url(#softGlow)">
+      <rect x="0" y="20" width="170" height="100" rx="14" fill="url(#cardFace)" stroke="#22d3ee" stroke-opacity="0.55" stroke-width="2"/>
+      <rect x="18" y="42" width="80" height="9" rx="4" fill="#22d3ee" opacity="0.7"/>
+      <rect x="18" y="62" width="120" height="7" rx="3" fill="#94a3b8" opacity="0.4"/>
+      <rect x="18" y="78" width="95" height="7" rx="3" fill="#94a3b8" opacity="0.28"/>
+      <circle cx="142" cy="46" r="7" fill="#38bdf8">
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="1.8s" repeatCount="indefinite"/>
+        <animate attributeName="r" values="5;8;5" dur="1.8s" repeatCount="indefinite"/>
       </circle>
-      <animateTransform attributeName="transform" type="translate" values="0,0;0,-7;0,0" dur="5.5s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-12;0,0" dur="4.8s" repeatCount="indefinite"/>
     </g>
-    <g opacity="0.75">
-      <rect x="40" y="95" width="120" height="70" rx="10" fill="#122433" stroke="#38bdf8" stroke-opacity="0.28" stroke-width="1.2"/>
-      <rect x="54" y="112" width="50" height="6" rx="3" fill="#38bdf8" opacity="0.45"/>
-      <rect x="54" y="128" width="85" height="5" rx="2.5" fill="#64748b" opacity="0.35"/>
-      <animateTransform attributeName="transform" type="translate" values="0,0;0,-5;0,0" dur="6.2s" begin="0.8s" repeatCount="indefinite"/>
+    <g opacity="0.88">
+      <rect x="50" y="110" width="140" height="80" rx="12" fill="#122433" stroke="#fbbf24" stroke-opacity="0.4" stroke-width="1.5"/>
+      <rect x="66" y="128" width="55" height="7" rx="3" fill="#fbbf24" opacity="0.55"/>
+      <rect x="66" y="146" width="95" height="6" rx="3" fill="#64748b" opacity="0.4"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-8;0,0" dur="5.6s" begin="0.7s" repeatCount="indefinite"/>
     </g>
   </g>
 
-  <text x="56" y="108" fill="#e2e8f0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="34" font-weight="700">Software systems / products / realtime 3D</text>
-  <text x="56" y="148" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18">Full-stack products, systems tooling, and 3D pipelines</text>
+  <!-- headline -->
+  <text x="52" y="100" fill="#f8fafc" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="36" font-weight="800" filter="url(#softGlow)">Software systems / products / realtime 3D</text>
+  <text x="52" y="142" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="18">Full-stack products, systems tooling, and 3D pipelines — built to ship</text>
 
-  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="#67e8f9">
-    <text x="56" y="188" opacity="0">Building production apps and hardened pipelines
-      <animate attributeName="opacity" values="0;1;1;0;0;0" keyTimes="0;0.05;0.28;0.33;0.66;1" dur="9s" repeatCount="indefinite"/>
+  <!-- rotating tagline -->
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" fill="#67e8f9" filter="url(#softGlow)">
+    <text x="52" y="188" opacity="0">Building production apps and hardened pipelines
+      <animate attributeName="opacity" values="0;1;1;0;0;0" keyTimes="0;0.04;0.28;0.32;0.66;1" dur="9s" repeatCount="indefinite"/>
     </text>
-    <text x="56" y="188" opacity="0">React / Node / Python / sockets / parallel compute
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.33;0.38;0.61;0.66;1" dur="9s" repeatCount="indefinite"/>
+    <text x="52" y="188" opacity="0">React / Node / Python / sockets / parallel compute
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.32;0.36;0.60;0.64;1" dur="9s" repeatCount="indefinite"/>
     </text>
-    <text x="56" y="188" opacity="0">OpenUSD / Cesium / WebGL / geospatial viz
-      <animate attributeName="opacity" values="0;0;1;1;1;0" keyTimes="0;0.66;0.71;0.75;0.95;1" dur="9s" repeatCount="indefinite"/>
+    <text x="52" y="188" opacity="0">OpenUSD / Cesium / WebGL / geospatial viz
+      <animate attributeName="opacity" values="0;0;1;1;1;0" keyTimes="0;0.64;0.68;0.72;0.96;1" dur="9s" repeatCount="indefinite"/>
     </text>
   </g>
 
-  <rect x="56" y="212" width="180" height="4" rx="2" fill="#22d3ee" opacity="0.85">
-    <animate attributeName="width" values="180;240;180" dur="4s" repeatCount="indefinite"/>
+  <!-- orbiting badges -->
+  <g transform="translate(52,215)">
+    <g>
+      <rect width="110" height="28" rx="14" fill="#083344" stroke="#22d3ee" stroke-width="1.5"/>
+      <text x="55" y="19" text-anchor="middle" fill="#67e8f9" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="700">systems</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-4;0,0" dur="3s" repeatCount="indefinite"/>
+    </g>
+    <g transform="translate(122,0)">
+      <rect width="110" height="28" rx="14" fill="#422006" stroke="#fbbf24" stroke-width="1.5"/>
+      <text x="55" y="19" text-anchor="middle" fill="#fde68a" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="700">products</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-5;0,0" dur="3.4s" begin="0.4s" repeatCount="indefinite"/>
+    </g>
+    <g transform="translate(244,0)">
+      <rect width="120" height="28" rx="14" fill="#1e1b4b" stroke="#a78bfa" stroke-width="1.5"/>
+      <text x="60" y="19" text-anchor="middle" fill="#ddd6fe" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="700">realtime 3D</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-6;0,0" dur="3.8s" begin="0.8s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- energy bar -->
+  <rect x="52" y="270" width="220" height="6" rx="3" fill="#0e7490" opacity="0.5"/>
+  <rect x="52" y="270" width="220" height="6" rx="3" fill="#22d3ee" opacity="0.9" filter="url(#softGlow)">
+    <animate attributeName="width" values="160;280;160" dur="3.5s" repeatCount="indefinite"/>
   </rect>
-  <rect x="56" y="212" width="60" height="4" rx="2" fill="#fbbf24" opacity="0.9">
-    <animate attributeName="x" values="56;176;56" dur="4s" repeatCount="indefinite"/>
+  <rect x="52" y="270" width="70" height="6" rx="3" fill="#fbbf24" opacity="0.95" filter="url(#strongGlow)">
+    <animate attributeName="x" values="52;230;52" dur="3.5s" repeatCount="indefinite"/>
   </rect>
 </svg>
