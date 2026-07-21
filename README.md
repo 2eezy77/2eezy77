@@ -38,7 +38,7 @@ Software engineer focused on software systems, full-stack products, and real-tim
         <img src="https://raw.githubusercontent.com/2eezy77/kiad-atc/main/docs/kiad-atc-ui.jpg" alt="Real-time aviation visualization" width="100%" />
       </a>
       <h3><a href="https://github.com/2eezy77/kiad-atc">kiad-atc</a></h3>
-      Real-time aviation visualization (systems/UI) - Cesium, Photorealistic 3D Tiles, live ADS-B feeds, geospatial overlays.
+      Real-time geospatial viz - CesiumJS, Photorealistic 3D Tiles, live ADS-B pipeline, overlay UI.
     </td>
   </tr>
 </table>
