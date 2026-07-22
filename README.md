@@ -60,4 +60,4 @@ Also: [omniverse-integration](https://github.com/2eezy77/omniverse-integration) 
 - **Products & tooling** - React, Node/Express, Flask, Postgres, Stripe, Plaid; shipping end-to-end
 - **Real-time / 3D** - CesiumJS, OpenUSD, Maya, Omniverse
 
-Virginia Tech M.Eng. track. Building and hardening full-stack products, systems tools, and 3D / geospatial pipelines.
+Building and hardening full-stack products, systems tools, and 3D / geospatial pipelines.
