@@ -52,7 +52,7 @@ Software engineer focused on software systems, full-stack products, and real-tim
   </tr>
 </table>
 
-Also: [omniverse-integration](https://github.com/2eezy77/omniverse-integration) · [stem-summer-camp-registration](https://github.com/2eezy77/stem-summer-camp-registration) · [csci320-parallel-programming-portfolio](https://github.com/2eezy77/csci320-parallel-programming-portfolio) · [crkbd_layout](https://github.com/2eezy77/crkbd_layout)
+Also shipping: [omniverse-integration](https://github.com/2eezy77/omniverse-integration) · [stem-summer-camp-registration](https://github.com/2eezy77/stem-summer-camp-registration) · [csci320-parallel-programming-portfolio](https://github.com/2eezy77/csci320-parallel-programming-portfolio)
 
 ### Focus
 
