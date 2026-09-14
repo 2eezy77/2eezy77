@@ -7,8 +7,8 @@ Software engineer focused on software systems, full-stack products, and real-tim
 | Language | Focus |
 | --- | --- |
 | **Python** | Products, pipelines, OpenUSD / Maya tooling |
-| **TypeScript / JavaScript** | Full-stack apps, CesiumJS viz |
-| **C / C++** | Systems tools, parallel programming |
+| **JavaScript** | React / Express apps, CesiumJS viz |
+| **C** | Parallel systems (MPI / OpenMP / Pthreads) |
 | **SQL** | Postgres-backed product data |
 
 ### Featured builds
@@ -21,7 +21,7 @@ Software engineer focused on software systems, full-stack products, and real-tim
       </a>
       <br />
       <strong>product</strong> · <b><a href="https://github.com/2eezy77/property-manager">property-manager</a></b><br />
-      Full-stack rental product - tenant / manager / owner portals with Stripe ACH, Plaid, and Postgres.
+      Live rental product ([monterorentals.com](https://www.monterorentals.com)) - tenant / manager / owner portals with Stripe ACH, Cash App, Plaid, and Postgres.
     </td>
     <td width="50%" valign="top">
       <a href="https://github.com/2eezy77/window-hints">
@@ -57,7 +57,7 @@ Also shipping: [omniverse-integration](https://github.com/2eezy77/omniverse-inte
 ### Focus
 
 - **Software systems** - sockets, Windows UIA, parallel programming (MPI / OpenMP / Pthreads)
-- **Products & tooling** - React, Node/Express, Flask, Postgres, Stripe, Plaid; shipping end-to-end
+- **Products & tooling** - React, Node/Express, Flask, Postgres, Stripe ACH / Cash App, Plaid; shipping end-to-end
 - **Real-time / 3D** - CesiumJS, OpenUSD, Maya, Omniverse
 
 Building and hardening full-stack products, systems tools, and 3D / geospatial pipelines.
