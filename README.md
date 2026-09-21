@@ -6,9 +6,9 @@ Software engineer focused on software systems, full-stack products, and real-tim
 
 | Language | Focus |
 | --- | --- |
-| **Python** | Products, pipelines, OpenUSD / Maya tooling |
-| **TypeScript / JavaScript** | Full-stack apps, CesiumJS viz |
-| **C / C++** | Systems tools, parallel programming |
+| **Python** | Pipelines, Flask apps, OpenUSD / Maya tooling |
+| **JavaScript** | React / Express products, CesiumJS viz |
+| **C** | Parallel systems (MPI / OpenMP / Pthreads) |
 | **SQL** | Postgres-backed product data |
 
 ### Featured builds
@@ -21,7 +21,7 @@ Software engineer focused on software systems, full-stack products, and real-tim
       </a>
       <br />
       <strong>product</strong> · <b><a href="https://github.com/2eezy77/property-manager">property-manager</a></b><br />
-      Full-stack rental product - tenant / manager / owner portals with Stripe ACH, Plaid, and Postgres.
+      Live rental product ([monterorentals.com](https://www.monterorentals.com)) - tenant / manager / owner portals with Stripe ACH, Cash App, Plaid, and Postgres.
     </td>
     <td width="50%" valign="top">
       <a href="https://github.com/2eezy77/window-hints">
@@ -54,10 +54,23 @@ Software engineer focused on software systems, full-stack products, and real-tim
 
 Also shipping: [omniverse-integration](https://github.com/2eezy77/omniverse-integration) · [stem-summer-camp-registration](https://github.com/2eezy77/stem-summer-camp-registration) · [csci320-parallel-programming-portfolio](https://github.com/2eezy77/csci320-parallel-programming-portfolio)
 
+### How to run the public work
+
+Verified against each repo's README and source. Full runbooks stay in those repos.
+
+| Repo | Start here | Constraints |
+| --- | --- | --- |
+| [property-manager](https://github.com/2eezy77/property-manager) | Live: [monterorentals.com](https://www.monterorentals.com). Local: that repo's `SETUP.md`, then `npm run dev` + `client` Vite. API `PORT` defaults to **8080** (see `.env.example`). | Node 18+, Postgres. Do not rotate `ENCRYPTION_KEY` after banks are linked. Stripe webhooks need the raw body. Production webhook must include `charge.refunded` (see `docs/stripe-webhook-events.md`). |
+| [window-hints](https://github.com/2eezy77/window-hints) | `python -m multiwindow_ui_hints` | Windows. Elevate with `Run-UI-Hints.ps1` for hints inside admin apps. |
+| [openusd-live-control](https://github.com/2eezy77/openusd-live-control) | Load `tools/maya_bridge.py` in Maya; send JSON via `scripts/send_cmd.py` to `127.0.0.1:8765`. | Maya 2026 + MayaUSD, Windows. First-run: `00_START_HERE.md`. |
+| [kiad-atc](https://github.com/2eezy77/kiad-atc) | `python3 server.py` (stdlib only). Aircraft: `GET /api/aircraft`. | Needs `CESIUM_TOKEN` and `GOOGLE_KEY`. Educational visualization — not an operational ATC tool. |
+
+Also-shipping entry points: omniverse `05-scripts/executive-verification.py` · stem camp `python app.py` on **master** (local demo, no auth) · parallel C `make` + Open MPI.
+
 ### Focus
 
 - **Software systems** - sockets, Windows UIA, parallel programming (MPI / OpenMP / Pthreads)
-- **Products & tooling** - React, Node/Express, Flask, Postgres, Stripe, Plaid; shipping end-to-end
+- **Products & tooling** - React, Node/Express, Flask, Postgres, Stripe ACH / Cash App, Plaid; shipping end-to-end
 - **Real-time / 3D** - CesiumJS, OpenUSD, Maya, Omniverse
 
 Building and hardening full-stack products, systems tools, and 3D / geospatial pipelines.
